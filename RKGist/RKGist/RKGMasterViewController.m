@@ -7,8 +7,9 @@
 //
 
 #import "RKGMasterViewController.h"
-
 #import "RKGDetailViewController.h"
+#import "RKGGist.h"
+
 
 @interface RKGMasterViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -34,28 +35,34 @@
                                                                                action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     
-    // Load the public Gists from Github
-    RKManagedObjectStore *managedObjectStore = [RKManagedObjectStore defaultStore];
-    RKEntityMapping *entityMapping = [RKEntityMapping mappingForEntityForName:@"Gist"
-                                                         inManagedObjectStore:managedObjectStore];
-    [entityMapping addAttributeMappingsFromDictionary:@{@"id":             @"gistID",
-                                                        @"url":            @"jsonURL",
-                                                        @"description":    @"descriptionText",
-                                                        @"public":         @"public",
-                                                        @"created_at":     @"createdAt"}];
+    UIRefreshControl *refreshControl = [UIRefreshControl new];
+    [refreshControl addTarget:self
+                       action:@selector(loadGists)
+             forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
     
-    RKLogConfigureByName("RestKit/Network", RKLogLevelTrace);
-    RKResponseDescriptor *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:entityMapping
-                                                                                            method:RKRequestMethodGET
-                                                                                       pathPattern:@"/gists/public"
-                                                                                           keyPath:nil
-                                                                                       statusCodes:RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful)];
-    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"https://api.github.com/gists/public"]];
-    RKManagedObjectRequestOperation *managedObjectRequestOperation = [[RKManagedObjectRequestOperation alloc] initWithRequest:request
-                                                                                                          responseDescriptors:@[ responseDescriptor ]];
-    managedObjectRequestOperation.managedObjectContext = self.managedObjectContext;
-    [[NSOperationQueue currentQueue] addOperation:managedObjectRequestOperation];
+    [self loadGists];
+    [self.refreshControl beginRefreshing];
 }
+
+//------------------------------------------------------------------------------
+- (void)loadGists
+{
+    [[RKObjectManager sharedManager] getObjectsAtPath:@"/gists/public"
+                                           parameters:nil
+                                              success:^(RKObjectRequestOperation *operation, RKMappingResult *mappingResult) {
+                                                [self.refreshControl endRefreshing];
+                                            } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+                                                [self.refreshControl endRefreshing];
+                                                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"An Error Has Occurred"
+                                                                                                    message:[error localizedDescription]
+                                                                                                   delegate:nil
+                                                                                          cancelButtonTitle:@"OK"
+                                                                                          otherButtonTitles:nil];
+                                                [alertView show];
+    }];
+}
+
 
 //------------------------------------------------------------------------------
 - (void)didReceiveMemoryWarning
@@ -286,8 +293,10 @@ canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 - (void)configureCell:(UITableViewCell *)cell
           atIndexPath:(NSIndexPath *)indexPath
 {
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"descriptionText"] description];
+    RKGGist *gist = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
+    cell.textLabel.text = gist.titleText;
+    cell.detailTextLabel.text = gist.subtitleText;
 }
 
 @end

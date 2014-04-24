@@ -27,6 +27,12 @@
 		EA7B63FD19098FEE00A3CCB8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D819098FEE00A3CCB8 /* CoreData.framework */; };
 		EA7B640519098FEE00A3CCB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA7B640319098FEE00A3CCB8 /* InfoPlist.strings */; };
 		EA7B640719098FEE00A3CCB8 /* RKGistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B640619098FEE00A3CCB8 /* RKGistTests.m */; };
+		EA7B64121909B12D00A3CCB8 /* RKGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B64111909B12D00A3CCB8 /* RKGUser.m */; };
+		EA7B64131909B12D00A3CCB8 /* RKGUser.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B64111909B12D00A3CCB8 /* RKGUser.m */; };
+		EA7B64161909B12D00A3CCB8 /* RKGGist.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B64151909B12D00A3CCB8 /* RKGGist.m */; };
+		EA7B64171909B12D00A3CCB8 /* RKGGist.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B64151909B12D00A3CCB8 /* RKGGist.m */; };
+		EA7B641A1909B12D00A3CCB8 /* RKGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B64191909B12D00A3CCB8 /* RKGFile.m */; };
+		EA7B641B1909B12D00A3CCB8 /* RKGFile.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B64191909B12D00A3CCB8 /* RKGFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +73,12 @@
 		EA7B640219098FEE00A3CCB8 /* RKGistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKGistTests-Info.plist"; sourceTree = "<group>"; };
 		EA7B640419098FEE00A3CCB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EA7B640619098FEE00A3CCB8 /* RKGistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGistTests.m; sourceTree = "<group>"; };
+		EA7B64101909B12D00A3CCB8 /* RKGUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGUser.h; sourceTree = "<group>"; };
+		EA7B64111909B12D00A3CCB8 /* RKGUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGUser.m; sourceTree = "<group>"; };
+		EA7B64141909B12D00A3CCB8 /* RKGGist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGGist.h; sourceTree = "<group>"; };
+		EA7B64151909B12D00A3CCB8 /* RKGGist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGGist.m; sourceTree = "<group>"; };
+		EA7B64181909B12D00A3CCB8 /* RKGFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKGFile.h; sourceTree = "<group>"; };
+		EA7B64191909B12D00A3CCB8 /* RKGFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKGFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +156,12 @@
 				EA7B63F019098FEE00A3CCB8 /* RKGDetailViewController.m */,
 				EA7B63F219098FEE00A3CCB8 /* Images.xcassets */,
 				EA7B63E919098FEE00A3CCB8 /* RKGist.xcdatamodeld */,
+				EA7B64181909B12D00A3CCB8 /* RKGFile.h */,
+				EA7B64191909B12D00A3CCB8 /* RKGFile.m */,
+				EA7B64141909B12D00A3CCB8 /* RKGGist.h */,
+				EA7B64151909B12D00A3CCB8 /* RKGGist.m */,
+				EA7B64101909B12D00A3CCB8 /* RKGUser.h */,
+				EA7B64111909B12D00A3CCB8 /* RKGUser.m */,
 				EA7B63DB19098FEE00A3CCB8 /* Supporting Files */,
 			);
 			path = RKGist;
@@ -343,11 +361,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7B641A1909B12D00A3CCB8 /* RKGFile.m in Sources */,
 				EA7B63E119098FEE00A3CCB8 /* main.m in Sources */,
 				EA7B63F119098FEE00A3CCB8 /* RKGDetailViewController.m in Sources */,
 				EA7B63EB19098FEE00A3CCB8 /* RKGist.xcdatamodeld in Sources */,
 				EA7B63E519098FEE00A3CCB8 /* RKGAppDelegate.m in Sources */,
 				EA7B63EE19098FEE00A3CCB8 /* RKGMasterViewController.m in Sources */,
+				EA7B64161909B12D00A3CCB8 /* RKGGist.m in Sources */,
+				EA7B64121909B12D00A3CCB8 /* RKGUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7B641B1909B12D00A3CCB8 /* RKGFile.m in Sources */,
 				EA7B640719098FEE00A3CCB8 /* RKGistTests.m in Sources */,
+				EA7B64131909B12D00A3CCB8 /* RKGUser.m in Sources */,
+				EA7B64171909B12D00A3CCB8 /* RKGGist.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
