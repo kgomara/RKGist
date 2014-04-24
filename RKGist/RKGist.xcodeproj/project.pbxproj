@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65EC5DFCA97746FAB908E336 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF062FAA3834BBFA210C395 /* libPods-test.a */; };
+		6A283EA343204C55BFC2440A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C405AA0848424F41B7EC03D1 /* libPods.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		EA7B63D319098FEE00A3CCB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D219098FEE00A3CCB8 /* Foundation.framework */; };
+		EA7B63D519098FEE00A3CCB8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D419098FEE00A3CCB8 /* CoreGraphics.framework */; };
+		EA7B63D719098FEE00A3CCB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D619098FEE00A3CCB8 /* UIKit.framework */; };
+		EA7B63D919098FEE00A3CCB8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D819098FEE00A3CCB8 /* CoreData.framework */; };
+		EA7B63DF19098FEE00A3CCB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA7B63DD19098FEE00A3CCB8 /* InfoPlist.strings */; };
+		EA7B63E119098FEE00A3CCB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B63E019098FEE00A3CCB8 /* main.m */; };
+		EA7B63E519098FEE00A3CCB8 /* RKGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B63E419098FEE00A3CCB8 /* RKGAppDelegate.m */; };
+		EA7B63E819098FEE00A3CCB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA7B63E619098FEE00A3CCB8 /* Main.storyboard */; };
+		EA7B63EB19098FEE00A3CCB8 /* RKGist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA7B63E919098FEE00A3CCB8 /* RKGist.xcdatamodeld */; };
+		EA7B63EE19098FEE00A3CCB8 /* RKGMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B63ED19098FEE00A3CCB8 /* RKGMasterViewController.m */; };
+		EA7B63F119098FEE00A3CCB8 /* RKGDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B63F019098FEE00A3CCB8 /* RKGDetailViewController.m */; };
+		EA7B63F319098FEE00A3CCB8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA7B63F219098FEE00A3CCB8 /* Images.xcassets */; };
+		EA7B63FA19098FEE00A3CCB8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63F919098FEE00A3CCB8 /* XCTest.framework */; };
+		EA7B63FB19098FEE00A3CCB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D219098FEE00A3CCB8 /* Foundation.framework */; };
+		EA7B63FC19098FEE00A3CCB8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D619098FEE00A3CCB8 /* UIKit.framework */; };
+		EA7B63FD19098FEE00A3CCB8 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7B63D819098FEE00A3CCB8 /* CoreData.framework */; };
+		EA7B640519098FEE00A3CCB8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EA7B640319098FEE00A3CCB8 /* InfoPlist.strings */; };
+		EA7B640719098FEE00A3CCB8 /* RKGistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA7B640619098FEE00A3CCB8 /* RKGistTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA7B63FE19098FEE00A3CCB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA7B63C719098FEE00A3CCB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA7B63CE19098FEE00A3CCB8;
+			remoteInfo = RKGist;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C9E1DE31F294862B61CAD3E /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = ../../Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		5FD451DC20FE4FA384F0D0F9 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "../../Pods/Pods-test.xcconfig"; sourceTree = "<group>"; };
+		C405AA0848424F41B7EC03D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF062FAA3834BBFA210C395 /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7B63CF19098FEE00A3CCB8 /* RKGist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKGist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7B63D219098FEE00A3CCB8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA7B63D419098FEE00A3CCB8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA7B63D619098FEE00A3CCB8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EA7B63D819098FEE00A3CCB8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EA7B63DC19098FEE00A3CCB8 /* RKGist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKGist-Info.plist"; sourceTree = "<group>"; };
+		EA7B63DE19098FEE00A3CCB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA7B63E019098FEE00A3CCB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EA7B63E219098FEE00A3CCB8 /* RKGist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKGist-Prefix.pch"; sourceTree = "<group>"; };
+		EA7B63E319098FEE00A3CCB8 /* RKGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGAppDelegate.h; sourceTree = "<group>"; };
+		EA7B63E419098FEE00A3CCB8 /* RKGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGAppDelegate.m; sourceTree = "<group>"; };
+		EA7B63E719098FEE00A3CCB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA7B63EA19098FEE00A3CCB8 /* RKGist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RKGist.xcdatamodel; sourceTree = "<group>"; };
+		EA7B63EC19098FEE00A3CCB8 /* RKGMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGMasterViewController.h; sourceTree = "<group>"; };
+		EA7B63ED19098FEE00A3CCB8 /* RKGMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGMasterViewController.m; sourceTree = "<group>"; };
+		EA7B63EF19098FEE00A3CCB8 /* RKGDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKGDetailViewController.h; sourceTree = "<group>"; };
+		EA7B63F019098FEE00A3CCB8 /* RKGDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGDetailViewController.m; sourceTree = "<group>"; };
+		EA7B63F219098FEE00A3CCB8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EA7B63F819098FEE00A3CCB8 /* RKGistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKGistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA7B63F919098FEE00A3CCB8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA7B640219098FEE00A3CCB8 /* RKGistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKGistTests-Info.plist"; sourceTree = "<group>"; };
+		EA7B640419098FEE00A3CCB8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EA7B640619098FEE00A3CCB8 /* RKGistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKGistTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA7B63CC19098FEE00A3CCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7B63D519098FEE00A3CCB8 /* CoreGraphics.framework in Frameworks */,
+				EA7B63D919098FEE00A3CCB8 /* CoreData.framework in Frameworks */,
+				EA7B63D719098FEE00A3CCB8 /* UIKit.framework in Frameworks */,
+				EA7B63D319098FEE00A3CCB8 /* Foundation.framework in Frameworks */,
+				6A283EA343204C55BFC2440A /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7B63F519098FEE00A3CCB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7B63FA19098FEE00A3CCB8 /* XCTest.framework in Frameworks */,
+				EA7B63FD19098FEE00A3CCB8 /* CoreData.framework in Frameworks */,
+				EA7B63FC19098FEE00A3CCB8 /* UIKit.framework in Frameworks */,
+				EA7B63FB19098FEE00A3CCB8 /* Foundation.framework in Frameworks */,
+				65EC5DFCA97746FAB908E336 /* libPods-test.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA7B63C619098FEE00A3CCB8 = {
+			isa = PBXGroup;
+			children = (
+				EA7B63DA19098FEE00A3CCB8 /* RKGist */,
+				EA7B640019098FEE00A3CCB8 /* RKGistTests */,
+				EA7B63D119098FEE00A3CCB8 /* Frameworks */,
+				EA7B63D019098FEE00A3CCB8 /* Products */,
+				4C9E1DE31F294862B61CAD3E /* Pods.xcconfig */,
+				5FD451DC20FE4FA384F0D0F9 /* Pods-test.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		EA7B63D019098FEE00A3CCB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA7B63CF19098FEE00A3CCB8 /* RKGist.app */,
+				EA7B63F819098FEE00A3CCB8 /* RKGistTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA7B63D119098FEE00A3CCB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA7B63D219098FEE00A3CCB8 /* Foundation.framework */,
+				EA7B63D419098FEE00A3CCB8 /* CoreGraphics.framework */,
+				EA7B63D619098FEE00A3CCB8 /* UIKit.framework */,
+				EA7B63D819098FEE00A3CCB8 /* CoreData.framework */,
+				EA7B63F919098FEE00A3CCB8 /* XCTest.framework */,
+				C405AA0848424F41B7EC03D1 /* libPods.a */,
+				DBF062FAA3834BBFA210C395 /* libPods-test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA7B63DA19098FEE00A3CCB8 /* RKGist */ = {
+			isa = PBXGroup;
+			children = (
+				EA7B63E319098FEE00A3CCB8 /* RKGAppDelegate.h */,
+				EA7B63E419098FEE00A3CCB8 /* RKGAppDelegate.m */,
+				EA7B63E619098FEE00A3CCB8 /* Main.storyboard */,
+				EA7B63EC19098FEE00A3CCB8 /* RKGMasterViewController.h */,
+				EA7B63ED19098FEE00A3CCB8 /* RKGMasterViewController.m */,
+				EA7B63EF19098FEE00A3CCB8 /* RKGDetailViewController.h */,
+				EA7B63F019098FEE00A3CCB8 /* RKGDetailViewController.m */,
+				EA7B63F219098FEE00A3CCB8 /* Images.xcassets */,
+				EA7B63E919098FEE00A3CCB8 /* RKGist.xcdatamodeld */,
+				EA7B63DB19098FEE00A3CCB8 /* Supporting Files */,
+			);
+			path = RKGist;
+			sourceTree = "<group>";
+		};
+		EA7B63DB19098FEE00A3CCB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA7B63DC19098FEE00A3CCB8 /* RKGist-Info.plist */,
+				EA7B63DD19098FEE00A3CCB8 /* InfoPlist.strings */,
+				EA7B63E019098FEE00A3CCB8 /* main.m */,
+				EA7B63E219098FEE00A3CCB8 /* RKGist-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EA7B640019098FEE00A3CCB8 /* RKGistTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA7B640619098FEE00A3CCB8 /* RKGistTests.m */,
+				EA7B640119098FEE00A3CCB8 /* Supporting Files */,
+			);
+			path = RKGistTests;
+			sourceTree = "<group>";
+		};
+		EA7B640119098FEE00A3CCB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EA7B640219098FEE00A3CCB8 /* RKGistTests-Info.plist */,
+				EA7B640319098FEE00A3CCB8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA7B63CE19098FEE00A3CCB8 /* RKGist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7B640A19098FEE00A3CCB8 /* Build configuration list for PBXNativeTarget "RKGist" */;
+			buildPhases = (
+				7D20C46AEDD348CF83CC89E1 /* Check Pods Manifest.lock */,
+				EA7B63CB19098FEE00A3CCB8 /* Sources */,
+				EA7B63CC19098FEE00A3CCB8 /* Frameworks */,
+				EA7B63CD19098FEE00A3CCB8 /* Resources */,
+				02EE87005E7D40D7B278C00A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RKGist;
+			productName = RKGist;
+			productReference = EA7B63CF19098FEE00A3CCB8 /* RKGist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA7B63F719098FEE00A3CCB8 /* RKGistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA7B640D19098FEE00A3CCB8 /* Build configuration list for PBXNativeTarget "RKGistTests" */;
+			buildPhases = (
+				830C772F84724127BE69CC5F /* Check Pods Manifest.lock */,
+				EA7B63F419098FEE00A3CCB8 /* Sources */,
+				EA7B63F519098FEE00A3CCB8 /* Frameworks */,
+				EA7B63F619098FEE00A3CCB8 /* Resources */,
+				04140D6EE36149B8BD91669D /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA7B63FF19098FEE00A3CCB8 /* PBXTargetDependency */,
+			);
+			name = RKGistTests;
+			productName = RKGistTests;
+			productReference = EA7B63F819098FEE00A3CCB8 /* RKGistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA7B63C719098FEE00A3CCB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RKG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "O'Mara Consulting Associates";
+				TargetAttributes = {
+					EA7B63F719098FEE00A3CCB8 = {
+						TestTargetID = EA7B63CE19098FEE00A3CCB8;
+					};
+				};
+			};
+			buildConfigurationList = EA7B63CA19098FEE00A3CCB8 /* Build configuration list for PBXProject "RKGist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA7B63C619098FEE00A3CCB8;
+			productRefGroup = EA7B63D019098FEE00A3CCB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA7B63CE19098FEE00A3CCB8 /* RKGist */,
+				EA7B63F719098FEE00A3CCB8 /* RKGistTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA7B63CD19098FEE00A3CCB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7B63F319098FEE00A3CCB8 /* Images.xcassets in Resources */,
+				EA7B63DF19098FEE00A3CCB8 /* InfoPlist.strings in Resources */,
+				EA7B63E819098FEE00A3CCB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7B63F619098FEE00A3CCB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7B640519098FEE00A3CCB8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02EE87005E7D40D7B278C00A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		04140D6EE36149B8BD91669D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Pods-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D20C46AEDD348CF83CC89E1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		830C772F84724127BE69CC5F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA7B63CB19098FEE00A3CCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7B63E119098FEE00A3CCB8 /* main.m in Sources */,
+				EA7B63F119098FEE00A3CCB8 /* RKGDetailViewController.m in Sources */,
+				EA7B63EB19098FEE00A3CCB8 /* RKGist.xcdatamodeld in Sources */,
+				EA7B63E519098FEE00A3CCB8 /* RKGAppDelegate.m in Sources */,
+				EA7B63EE19098FEE00A3CCB8 /* RKGMasterViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA7B63F419098FEE00A3CCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7B640719098FEE00A3CCB8 /* RKGistTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA7B63FF19098FEE00A3CCB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA7B63CE19098FEE00A3CCB8 /* RKGist */;
+			targetProxy = EA7B63FE19098FEE00A3CCB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA7B63DD19098FEE00A3CCB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA7B63DE19098FEE00A3CCB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EA7B63E619098FEE00A3CCB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA7B63E719098FEE00A3CCB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA7B640319098FEE00A3CCB8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA7B640419098FEE00A3CCB8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA7B640819098FEE00A3CCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EA7B640919098FEE00A3CCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA7B640B19098FEE00A3CCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9E1DE31F294862B61CAD3E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RKGist/RKGist-Prefix.pch";
+				INFOPLIST_FILE = "RKGist/RKGist-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EA7B640C19098FEE00A3CCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9E1DE31F294862B61CAD3E /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RKGist/RKGist-Prefix.pch";
+				INFOPLIST_FILE = "RKGist/RKGist-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EA7B640E19098FEE00A3CCB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD451DC20FE4FA384F0D0F9 /* Pods-test.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RKGist.app/RKGist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RKGist/RKGist-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RKGistTests/RKGistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EA7B640F19098FEE00A3CCB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FD451DC20FE4FA384F0D0F9 /* Pods-test.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RKGist.app/RKGist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RKGist/RKGist-Prefix.pch";
+				INFOPLIST_FILE = "RKGistTests/RKGistTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA7B63CA19098FEE00A3CCB8 /* Build configuration list for PBXProject "RKGist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7B640819098FEE00A3CCB8 /* Debug */,
+				EA7B640919098FEE00A3CCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7B640A19098FEE00A3CCB8 /* Build configuration list for PBXNativeTarget "RKGist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7B640B19098FEE00A3CCB8 /* Debug */,
+				EA7B640C19098FEE00A3CCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA7B640D19098FEE00A3CCB8 /* Build configuration list for PBXNativeTarget "RKGistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA7B640E19098FEE00A3CCB8 /* Debug */,
+				EA7B640F19098FEE00A3CCB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EA7B63E919098FEE00A3CCB8 /* RKGist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA7B63EA19098FEE00A3CCB8 /* RKGist.xcdatamodel */,
+			);
+			currentVersion = EA7B63EA19098FEE00A3CCB8 /* RKGist.xcdatamodel */;
+			path = RKGist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA7B63C719098FEE00A3CCB8 /* Project object */;
+}
